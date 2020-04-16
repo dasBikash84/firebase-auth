@@ -19,7 +19,7 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
 
-internal class FirebaseAuthService {
+class FirebaseAuthService {
 
     companion object {
 

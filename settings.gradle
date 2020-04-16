@@ -1,2 +1,2 @@
 rootProject.name='Firebase Auth'
-include ':app'
+include ':firebase_auth'

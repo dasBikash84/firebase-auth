@@ -23,7 +23,7 @@ internal class FirebaseAuthService {
 
     companion object {
 
-        private const val emailVerificationLinkGenLogSPKey = "com.dasbikash.book_keeper_repo.firebase.FirebaseAuthService.emailVerificationLinkGenLogSPKey"
+        private const val emailVerificationLinkGenLogSPKey = "com.dasbikash.firebase_auth.FirebaseAuthService.emailVerificationLinkGenLogSPKey"
 
         private val emailValidator =
             Regex("(?:[a-z0-9!#\$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#\$%&'*+/=?^_`{|}~-]+)*|(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])")
@@ -77,11 +77,11 @@ internal class FirebaseAuthService {
         private const val SIGN_UP_FAILURE_MESSAGE = "Sign up failure!"
 
         private const val VERIFICATION_ID_SP_KEY =
-            "com.dasbikash.exp_man_repo.firebase.FirebaseAuthService.VERIFICATION_ID_SP_KEY"
+            "com.dasbikash.firebase_auth.FirebaseAuthService.VERIFICATION_ID_SP_KEY"
         private const val AUTH_CREDENTIALS_SP_KEY =
-            "com.dasbikash.exp_man_repo.firebase.FirebaseAuthService.AUTH_CREDENTIALS_SP_KEY"
+            "com.dasbikash.firebase_auth.FirebaseAuthService.AUTH_CREDENTIALS_SP_KEY"
         private const val CODE_SEND_TIME_SP_KEY =
-            "com.dasbikash.exp_man_repo.firebase.FirebaseAuthService.CODE_SEND_TIME_SP_KEY"
+            "com.dasbikash.firebase_auth.FirebaseAuthService.CODE_SEND_TIME_SP_KEY"
 
         private fun validateEmailAddress(emailAddress: CharSequence) =
             emailAddress.trim().toString().toLowerCase(Locale.getDefault()).matches(
